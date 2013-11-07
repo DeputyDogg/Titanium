@@ -9,4 +9,8 @@
 	<entry key="item.TitaniumShovel.name">Titanium Shovel</entry>
 	<entry key="item.TitaniumSword.name">Titanium Sword</entry>
 	<entry key="item.TitaniumHoe.name">Titanium Hoe</entry>
+	<entry key="item.TitaniumHelmet.name">Titanium Helmet</entry>
+	<entry key="item.TitaniumPlate.name">Titanium Plate</entry>
+	<entry key="item.TitaniumLegs.name">Titanium Legs</entry>
+	<entry key="item.TitaniumBoots.name">Titanium Boots</entry>
 </properties>

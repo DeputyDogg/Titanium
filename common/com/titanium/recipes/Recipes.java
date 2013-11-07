@@ -32,6 +32,22 @@ public class Recipes {
 		GameRegistry.addRecipe(new ItemStack(Items.titaniumHoe, 1, 0), new Object[] {
 			"II ", " S ", " S ", 'I', Items.titaniumIngot, 'S', Item.stick
 		});
+		
+		GameRegistry.addRecipe(new ItemStack(Items.titaniumHelmet, 1, 0), new Object[] {
+			"III", "I I", 'I', Items.titaniumIngot
+		});
+		
+		GameRegistry.addRecipe(new ItemStack(Items.titaniumPlate, 1, 0), new Object[] {
+			"I I", "III", "III", 'I', Items.titaniumIngot
+		});
+		
+		GameRegistry.addRecipe(new ItemStack(Items.titaniumLegs, 1, 0), new Object[] {
+			"III", "I I", "I I", 'I', Items.titaniumIngot
+		});
+		
+		GameRegistry.addRecipe(new ItemStack(Items.titaniumBoots, 1, 0), new Object[] {
+			"I I", "I I", 'I', Items.titaniumIngot
+		});
 	}
 	
 }

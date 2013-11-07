@@ -33,4 +33,16 @@ public class Names {
 	public static final String TITANIUM_HELMET_UNLOCAL = "TitaniumHelmet";
 	public static final String TITANIUM_HELMET_NAME = "Titanium Helmet";
 	public static final String TITANIUM_HELMET_TEXTURE = "titanium_helmet";
+	
+	public static final String TITANIUM_PLATE_UNLOCAL = "TitaniumPlate";
+	public static final String TITANIUM_PLATE_NAME = "Titanium Plate";
+	public static final String TITANIUM_PLATE_TEXTURE = "titanium_plate";
+	
+	public static final String TITANIUM_LEGS_UNLOCAL = "TitaniumLegs";
+	public static final String TITANIUM_LEGS_NAME = "Titanium Legs";
+	public static final String TITANIUM_LEGS_TEXTURE = "titanium_legs";
+	
+	public static final String TITANIUM_BOOTS_UNLOCAL = "TitaniumBoots";
+	public static final String TITANIUM_BOOTS_NAME = "Titanium Boots";
+	public static final String TITANIUM_BOOTS_TEXTURE = "titanium_Boots";
 }

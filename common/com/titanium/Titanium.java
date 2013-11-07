@@ -9,6 +9,7 @@ import com.titanium.lib.ModInfo;
 import com.titanium.recipes.Recipes;
 import com.titanium.world.WorldGenerator;
 
+import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
@@ -33,6 +34,7 @@ public class Titanium {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		
+		RenderingRegistry.addNewArmourRendererPrefix("titanium");
 		ConfigHandler.init(event.getSuggestedConfigurationFile());
 		LocalizationHandler.init();
 		Blocks.init();

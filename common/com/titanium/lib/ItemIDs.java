@@ -18,4 +18,16 @@ public class ItemIDs {
 	
 	public static final int TITANIUM_HOE_DEFAULT = 26005;
 	public static int titaniumHoeID;
+	
+	public static final int TITANIUM_HELMET_DEFAULT = 26006;
+	public static int titaniumHelmetID;
+	
+	public static final int TITANIUM_PLATE_DEFAULT = 26007;
+	public static int titaniumPlateID;
+	
+	public static final int TITANIUM_LEGS_DEFAULT = 26008;
+	public static int titaniumLegsID;
+	
+	public static final int TITANIUM_BOOTS_DEFAULT = 26009;
+	public static int titaniumBootsID;
 }
