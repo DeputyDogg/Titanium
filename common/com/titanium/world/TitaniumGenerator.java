@@ -3,6 +3,7 @@ package com.titanium.world;
 import java.util.Random;
 
 import com.titanium.blocks.Blocks;
+import com.titanium.blocks.TitaniumOre;
 
 import net.minecraft.block.Block;
 import net.minecraft.world.World;
@@ -31,7 +32,7 @@ public class TitaniumGenerator implements IWorldGenerator {
 	private void generateSurface(World world, Random random, int chunkX, int chunkZ) {
 		
 		// See spawnOres method below for parameter values
-		this.spawnOres(Blocks.titaniumOre, world, random, chunkX, chunkZ, 16, 16, 5, 20, 20, 40);
+		this.spawnOres(Blocks.titaniumOre, world, random, chunkX, chunkZ, 16, 16, TitaniumOre.getRandomVeinSize(), 5, TitaniumOre.getRandomYValue());
 	}
 
 	private void generateNether(World world, Random random, int i, int j) {
@@ -43,13 +44,13 @@ public class TitaniumGenerator implements IWorldGenerator {
 	}
 	
 	public void spawnOres(Block block, World world, Random random, int chunkX, int chunkZ, int XMax, int ZMax, int veinSize,
-			int spawnChance, int YMin, int YMax) {
+			int spawnChance, int YValue) {
 	
 		for (int i = 0; i < spawnChance; i++) {
 			int posX = chunkX + random.nextInt(XMax);
-			int posY = YMin + random.nextInt(YMax - YMin);
+			int posY = YValue;
 			int posZ = chunkZ + random.nextInt(ZMax);
-			(new WorldGenMinable(Blocks.titaniumOre.blockID, veinSize)).generate(world, random, posX, posY, posZ);
+			(new WorldGenMinable(block.blockID, veinSize)).generate(world, random, posX, posY, posZ);
 		}
 	}
 

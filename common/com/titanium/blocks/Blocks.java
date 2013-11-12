@@ -14,6 +14,7 @@ import net.minecraftforge.common.MinecraftForge;
 public class Blocks {
 
 	public static Block titaniumOre;
+	public static Configuration config;
 	
 	public static void init() {
 		
